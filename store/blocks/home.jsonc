@@ -1,44 +1,46 @@
 {
   "store.home": {
-    "blocks": [
+    "blocks": [      
       "info-card#button-right",
       "info-card#button-left",
       "flex-layout.row",
       "flex-layout.col",
       "shelf",
-      "slider-layout#home",
-      "responsive-layout.desktop#desktop",
-      "responsive-layout.mobile#mobile"
+      "slider-layout#home","responsive-layout.desktop#desktop", 
+      "responsive-layout.mobile#mobile",
+      "responsive-layout"
     ]
   },
-
+  
   "info-card#button-right": {
     "props": {
-      "isFullModeStyle": false,
-      "textPosition": "right",
-      "imageUrl": "https://appliancetheme.vteximg.com.br/arquivos/cozinha-rosa-min.png",
-      "headline": "Vintage Pink",
-      "subhead": "Give your kitchen a boho style adding vintage apparels.<br>Available until January 2020.",
-      "callToActionMode": "button",
-      "callToActionText": "Explore",
-      "callToActionUrl": "/sale/d",
-      "textAlignment": "center",
-      "blockClass": "vintage"
+    "isFullModeStyle": false,
+    "textPosition": "right",
+    "imageUrl": "https://appliancetheme.vteximg.com.br/arquivos/cozinha-rosa-min.png",
+    "headline": "Vintage Pink",
+    "subhead": "Give your kitchen a boho style adding vintage apparels.<br>Available until January 2020.",
+    "callToActionMode": "button",
+    "callToActionText": "Explore",
+    "callToActionUrl": "/sale/d",
+    "textAlignment": "center",
+    "blockClass": "vintage"   
     }
   },
-
+  
   "info-card#button-left": {
-    "props": {
-      "isFullModeStyle": false,
-      "textPosition": "left",
-      "imageUrl": "https://appliancetheme.vteximg.com.br/arquivos/cozinha-cinza-min.png",
-      "headline": "Shining chrome",
-      "subhead": "Give your kitchen a cool style adding warm metallic finishes.<br>Available until January 2020.",
-      "callToActionMode": "link",
-      "callToActionText": "Go to Collection",
-      "callToActionUrl": "/sale/d",
-      "textAlignment": "center"
-    }
+      "props":{
+        "isFullModeStyle": false,
+        "headline": "Shining chrome",
+        "callToActionText": "Go to Collection",
+        "imageUrl": "https://appliancetheme.vteximg.com.br/arquivos/cozinha-cinza-min.png",
+        "subhead": "Give your kitchen a cool style adding warm metallic finishes.<br>Available until January 2020.",
+        "textPosition": "left",
+        "callToActionMode": "link",
+        "callToActionUrl": "/sale/d",
+        "textAlignment": "center",
+        "blockClass": "metal"   
+    
+      }
   },
 
   "flex-layout.row":{
@@ -49,17 +51,17 @@
   },
 
   "info-card#rethink": {
-    "props": {
-      "imageUrl": "https://appliancetheme.vteximg.com.br/arquivos/utensilios-cozinha-min.png",
-      "isFullModeStyle": true,
-      "headline": "Time to rethink your kitchen",
-      "callToActionText": "Discover",
-      "textPosition": "center"
-    }
-  },
+     "props": {
+       "imageUrl": "https://appliancetheme.vteximg.com.br/arquivos/utensilios-cozinha-min.png",
+       "isFullModeStyle": true,
+       "headline": "Time to rethink your kitchen",
+       "callToActionText": "Discover",
+       "textPosition": "center"
+     }
+   },
 
-  "flex-layout.col": {
-    "children": [
+  "flex-layout.col":{
+    "children":[
       "image#electronics",
       "image#major-appliance"
     ]
@@ -96,28 +98,35 @@
     }
   },
 
-  "responsive-layout.desktop#desktop": {
+  "product-summary.shelf": {
     "children": [
-      "rich-text#desktop",
-      "image#desktop"
+      "product-summary-image",
+      "product-summary-add-to-list-button",
+      "product-summary-name",
+      "product-rating-inline",
+      "product-summary-space",
+      "product-summary-price",
+      "product-identifier.summary",
+      "product-summary-buy-button"
     ]
+  },
+
+  "responsive-layout.desktop#desktop": {
+    "children": ["rich-text#desktop","image#desktop"]
   },
   
   "responsive-layout.mobile#mobile": {
-    "children": [
-      "rich-text#mobile",
-      "image#mobile"
-    ]
+    "children": ["rich-text#mobile","image#mobile"]
   },
   
   "rich-text#desktop": {
     "props": {
-      "text": "# Your Coffee, Your Way \n ### New Coffee Makers Collection",
+      "text": "# Your Coffee, Your Way /n ### New Coffee Makers Collection",
       "textPosition": "CENTER",
       "textAlignment": "CENTER"
     }
   },
-
+  
   "rich-text#mobile": {
     "props": {
       "text": "<h3> Your Coffee, Your Way </h3> <h4> New Coffee Makers Collection</h4>",
@@ -125,7 +134,7 @@
       "textAlignment": "CENTER"
     }
   },
-
+  
   "image#desktop": {
     "props": {
       "src": "https://appliancetheme.vteximg.com.br/arquivos/Responsive-Image-Desktop.jpg?q=1",
@@ -149,4 +158,3 @@
   }
 
 }
-  
