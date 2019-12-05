@@ -40,21 +40,6 @@
       "showSavings": true,
       "showListPrice": true 
     }
-  },
-
-  "product-identifier.product": {
-      "children": [ 
-        "product-price",
-        "flex-layout.row#qty-sku"
-      ]
-    },
-    "flex-layout.row#qty-sku": {
-      "children": [
-        "sku-selector",
-        "product-quantity",
-        "shipping-simulator"
-      ]
   }
-  
 
 }
