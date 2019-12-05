@@ -2,10 +2,9 @@
     font-family: serif;
     font-size: 2.25rem;
     font-weight: normal;
-    color: black;
+    color: gray;
     border: 2px solid black;
     padding: 24px;
-    font-weight: bold;
 }
 
 .infoCardCallActionContainer :global(.vtex-button) {
@@ -33,4 +32,9 @@
 
 .infoCardContainer--metal {
     background-color: #e1e1e1;
+}
+
+.infoCardHeadline {
+    color: black;    
+    font-weight: bold;
 }
